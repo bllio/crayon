@@ -1,0 +1,7 @@
+.canvas {
+  background-color: var(--color-fill);
+  border-radius: var(--border-corners-md);
+  border: solid var(--border-size-md) var(--color-border);
+  display: block;
+  margin: auto;
+}

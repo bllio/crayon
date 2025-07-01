@@ -1,0 +1,8 @@
+.logo {
+  font-family: var(--font-logo);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  margin: var(--space-md) 0em;
+  text-align: center;
+  user-select: none;
+}
