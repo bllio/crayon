@@ -1,0 +1,19 @@
+.palette {
+  align-items: center;
+  background-color: var(--color-fill);
+  border-radius: var(--border-corners-md);
+  border: var(--border-size-md) solid var(--color-border);
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  list-style: none;
+  margin: var(--space-md) auto;
+  padding: var(--space-md);
+  user-select: none;
+  width: 240px;
+}
+
+.palette > li {
+  height: 32px;
+  width: 32px;
+}
