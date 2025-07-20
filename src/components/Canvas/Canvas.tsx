@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 
+import { useAppStore } from '../../stores/useAppStore';
+
 import { Pencil } from '../../classes/Pencil';
 import { Position } from '../../classes/Position';
 
@@ -12,6 +14,8 @@ export default function Canvas() {
     x: null,
     y: null,
   });
+  const activeColor = useAppStore((state) => state.activeColor);
+  const lineWidth = useAppStore((state) => state.lineWidth);
 
   const canvasWidth: number = (window.innerWidth * 70) / 100;
   const canvasHeight: number = (window.innerHeight * 70) / 100;
@@ -44,8 +48,9 @@ export default function Canvas() {
     if (!ctx || !isDrawing) {
       return;
     }
-    ctx.strokeStyle = '#333';
-    ctx.lineWidth = 2;
+
+    ctx.strokeStyle = activeColor;
+    ctx.lineWidth = lineWidth;
 
     if (!mousePosition.x || !mousePosition.y) {
       setMousePosition({
