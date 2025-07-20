@@ -51,6 +51,9 @@ export default function Canvas() {
 
     ctx.strokeStyle = activeColor;
     ctx.lineWidth = lineWidth;
+    // The values for `lineCap` and `lineJoin` should NOT change.
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
 
     if (!mousePosition.x || !mousePosition.y) {
       setMousePosition({
