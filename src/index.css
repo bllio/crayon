@@ -4,10 +4,12 @@
   /* Colors */
   --black: #2b2b2b;
   --white: #f4f4f4;
+  --gray: #d1d5db;
 
   --color-ink: var(--black);
   --color-fill: var(--white);
   --color-border: var(--black);
+  --color-subtle: var(--gray);
 
   /* Fonts */
   --slackside-one: 'Slackside One';
