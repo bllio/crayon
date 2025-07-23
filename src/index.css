@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&family=League+Spartan&display=swap');
 
 :root {
   /* Colors */
@@ -13,7 +13,9 @@
 
   /* Fonts */
   --slackside-one: 'Slackside One';
+  --league-spartan: 'League Spartan';
 
+  --font-copy: var(--league-spartan), sans-serif;
   --font-logo: var(--slackside-one), serif;
 
   /* Sizing */
@@ -26,6 +28,7 @@
   /* Spacing */
   --space-sm: 0.25em;
   --space-md: 0.5em;
+  --space-xl: 2em;
 
   /* Borders */
   --border-corners-md: 8px;

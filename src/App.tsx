@@ -1,4 +1,5 @@
 import Canvas from './components/Canvas/Canvas';
+import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo';
 import Palette from './components/Palette/Palette';
 
@@ -8,6 +9,7 @@ function App() {
       <Logo />
       <Canvas />
       <Palette />
+      <Footer />
     </>
   );
 }

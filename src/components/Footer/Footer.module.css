@@ -1,0 +1,11 @@
+.footer {
+  margin: var(--space-xl) auto;
+}
+
+.copyright {
+  color: var(--color-ink);
+  font-family: var(--font-copy);
+  font-size: var(--text-base);
+  margin: 0;
+  text-align: center;
+}
