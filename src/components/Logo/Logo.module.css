@@ -2,7 +2,7 @@
   font-family: var(--font-logo);
   font-size: var(--text-lg);
   color: var(--color-ink);
-  margin: var(--space-sm) 0em;
+  margin: var(--space-md) 0em;
   text-align: center;
   user-select: none;
 }

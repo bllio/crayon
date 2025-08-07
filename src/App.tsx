@@ -3,12 +3,22 @@ import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo';
 import Palette from './components/Palette/Palette';
 
+import styles from './App.module.css';
+
 function App() {
   return (
     <>
       <Logo />
-      <Canvas />
-      <Palette />
+      <div className={styles.layout}>
+        <div className={styles.left}>
+          <Palette />
+        </div>
+        <div className={styles.center}>
+          <Canvas />
+        </div>
+        {/* This fills the right side of the page so that the canvas stays centered. */}
+        <div className={styles.right}></div>
+      </div>
       <Footer />
     </>
   );
