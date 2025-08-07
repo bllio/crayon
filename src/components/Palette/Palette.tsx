@@ -1,9 +1,9 @@
 import ColorSwatch from '../ColorSwatch/ColorSwatch';
+import Panel from '../Panel/Panel';
 
 import { useAppStore } from '../../stores/useAppStore.ts';
 
 import { colors } from './Palette.constants.ts';
-import styles from './Palette.module.css';
 
 export default function Palette() {
   const activeColor = useAppStore((state) => state.activeColor);
@@ -21,5 +21,5 @@ export default function Palette() {
     );
   });
 
-  return <ul className={styles.palette}>{colorSwatches}</ul>;
+  return <Panel items={colorSwatches}></Panel>;
 }

@@ -1,4 +1,4 @@
-.palette {
+.panel {
   align-items: center;
   background-color: var(--color-fill);
   border-radius: var(--border-corners-md);
@@ -13,7 +13,7 @@
   width: 240px;
 }
 
-.palette > li {
+.panel > li {
   height: 32px;
   width: 32px;
 }
