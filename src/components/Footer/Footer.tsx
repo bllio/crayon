@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <div className={styles.footer}>
       <p className={styles.copyright}>
@@ -9,5 +9,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

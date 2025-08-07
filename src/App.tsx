@@ -5,7 +5,7 @@ import Palette from './components/Palette/Palette';
 
 import styles from './App.module.css';
 
-function App() {
+export default function App() {
   return (
     <>
       <Logo />
@@ -23,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
