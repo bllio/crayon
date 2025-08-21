@@ -7,7 +7,10 @@ import type { JSX } from 'react';
 // See https://stackoverflow.com/q/62432985.
 export type FlexDirection = 'column' | 'row';
 
+export type Spacing = 'small' | 'medium';
+
 export interface PanelProps {
   items: JSX.Element[];
   direction?: FlexDirection;
+  spacing?: Spacing;
 }

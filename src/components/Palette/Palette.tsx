@@ -21,5 +21,7 @@ export default function Palette() {
     );
   });
 
-  return <Panel items={colorSwatches} direction="column"></Panel>;
+  return (
+    <Panel items={colorSwatches} direction="column" spacing="small"></Panel>
+  );
 }
