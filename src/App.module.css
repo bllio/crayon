@@ -3,8 +3,3 @@
   justify-content: center;
   gap: var(--space-lg);
 }
-
-.right {
-  visibility: hidden;
-  width: 80px;
-}

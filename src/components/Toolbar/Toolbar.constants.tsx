@@ -1,0 +1,9 @@
+import { LucideEraser, LucidePencil } from 'lucide-react';
+
+import type { Tool } from './Toolbar.types';
+
+export const tools: Tool[] = [
+  // DON'T change the existing `id`s, they're used for list keys.
+  { id: 0, name: 'pencil', icon: LucidePencil },
+  { id: 1, name: 'eraser', icon: LucideEraser },
+];
