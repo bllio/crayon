@@ -6,10 +6,10 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: border 150ms;
+  transition: border 250ms;
   width: 100%;
 }
 
 .color-swatch--selected {
-  border: var(--border-size-md) solid var(--color-subtle);
+  border: var(--border-size-lg) solid var(--color-subtle);
 }

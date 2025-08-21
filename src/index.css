@@ -33,7 +33,9 @@
 
   /* Borders */
   --border-corners-md: 8px;
+
   --border-size-md: 4px;
+  --border-size-lg: 6px;
 }
 
 *,
