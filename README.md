@@ -10,7 +10,7 @@ I primarily started this project to learn about state management in [React][reac
 
 ## Features
 
-- Pencil tool for drawing.
+- Pencil and Eraser tools.
 - Right click to clear the canvas (might change to a keybind later).
 
 ## License

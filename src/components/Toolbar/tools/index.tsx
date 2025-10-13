@@ -3,6 +3,7 @@ import { LucideEraser, LucidePencil } from 'lucide-react';
 import type { Tool } from '../Toolbar.types';
 
 import * as Pencil from './Pencil';
+import * as Eraser from './Eraser';
 
 export const tools: Tool[] = [
   // DON'T change the existing `id`s, they're used for list keys.
@@ -16,6 +17,6 @@ export const tools: Tool[] = [
     id: 1,
     name: 'eraser',
     icon: LucideEraser,
-    draw: Pencil.draw, // TODO: This is a placeholder until Eraser is implemented.
+    draw: Eraser.draw,
   },
 ];
