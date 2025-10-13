@@ -11,7 +11,6 @@ I primarily started this project to learn about state management in [React][reac
 ## Features
 
 - Pencil and Eraser tools.
-- Right click to clear the canvas (might change to a keybind later).
 
 ## License
 

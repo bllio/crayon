@@ -29,13 +29,6 @@ export default function Canvas() {
     }
     if (evt.buttons === 1) {
       setIsDrawing(true);
-    } else if (evt.buttons === 2) {
-      // TODO: Temporary solution for clearing the canvas. Move this into a keybind later.
-      const ctx = canvasRef.current?.getContext('2d');
-      if (!ctx) {
-        return;
-      }
-      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     }
   };
 
