@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 
 import { useAppStore } from '../../stores/useAppStore';
 
-import { Pencil } from '../../classes/Pencil';
 import { Position } from '../../classes/Position';
+
+import { tools } from '../Toolbar/tools';
 
 import styles from './Canvas.module.css';
 
@@ -14,6 +15,7 @@ export default function Canvas() {
     x: null,
     y: null,
   });
+  const activeTool = useAppStore((state) => state.activeTool);
   const activeColor = useAppStore((state) => state.activeColor);
   const lineWidth = useAppStore((state) => state.lineWidth);
 
@@ -63,12 +65,13 @@ export default function Canvas() {
       return;
     }
 
+    // TODO: Rename to latestMousePosition
     const currentMousePosition = new Position(
       evt.nativeEvent.offsetX,
       evt.nativeEvent.offsetY,
     );
-    const pencil = new Pencil(ctx);
-    pencil.draw(mousePosition, currentMousePosition);
+
+    tools[activeTool].draw([mousePosition, currentMousePosition], ctx);
     setMousePosition(currentMousePosition);
   };
 

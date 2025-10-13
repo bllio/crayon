@@ -7,3 +7,5 @@ export class Position {
     this.y = y;
   }
 }
+
+export type PositionPair = [Position, Position];
