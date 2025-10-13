@@ -66,13 +66,13 @@ export default function Canvas() {
     }
 
     // TODO: Rename to latestMousePosition
-    const currentMousePosition = new Position(
+    const latestMousePosition = new Position(
       evt.nativeEvent.offsetX,
       evt.nativeEvent.offsetY,
     );
 
-    tools[activeTool].draw([mousePosition, currentMousePosition], ctx);
-    setMousePosition(currentMousePosition);
+    tools[activeTool].draw([mousePosition, latestMousePosition], ctx);
+    setMousePosition(latestMousePosition);
   };
 
   const handleContextMenu = (evt: React.MouseEvent<HTMLCanvasElement>) => {
