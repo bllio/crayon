@@ -58,7 +58,6 @@ export default function Canvas() {
       return;
     }
 
-    // TODO: Rename to latestMousePosition
     const latestMousePosition = new Position(
       evt.nativeEvent.offsetX,
       evt.nativeEvent.offsetY,
