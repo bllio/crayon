@@ -3,3 +3,38 @@
   justify-content: center;
   gap: var(--space-lg);
 }
+
+.layout__center {
+  z-index: 1;
+}
+
+.layout__left {
+  animation: 450ms slide-to-left;
+  z-index: 0;
+}
+
+.layout__left--hidden {
+  animation: 300ms slide-to-right;
+  transform: translateX(6em);
+  z-index: -1;
+}
+
+/* Animation keyframes */
+
+@keyframes slide-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(6em);
+  }
+}
+
+@keyframes slide-to-left {
+  0% {
+    transform: translateX(6em);
+  }
+  75% {
+    transform: translateX(-0.2em);
+  }
+}
