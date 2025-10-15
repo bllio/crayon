@@ -15,6 +15,7 @@ export default function Canvas() {
     x: null,
     y: null,
   });
+
   const activeTool = useAppStore((state) => state.activeTool);
   const activeColor = useAppStore((state) => state.activeColor);
   const lineWidth = useAppStore((state) => state.lineWidth);
