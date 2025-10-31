@@ -1,0 +1,14 @@
+.icon-btn {
+  background: none;
+  border-radius: var(--border-corners-md);
+  border: none;
+  cursor: pointer;
+  height: 44px;
+  transition: background-color 150ms;
+  width: 44px;
+}
+
+.icon-btn:hover {
+  background-color: var(--color-subtle);
+  transition: background-color 250ms;
+}

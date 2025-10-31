@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 import { useAppStore } from '../../stores/useAppStore';
 
@@ -8,8 +8,11 @@ import { tools } from '../Toolbar/tools';
 
 import styles from './Canvas.module.css';
 
-export default function Canvas() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+interface CanvasProps {
+  canvasRef: React.RefObject<HTMLCanvasElement | null>;
+}
+
+export default function Canvas({ canvasRef }: CanvasProps) {
   const [isDrawing, setIsDrawing] = useState<boolean>(false);
   const [mousePosition, setMousePosition] = useState<Position>({
     x: null,
